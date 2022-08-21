@@ -74,7 +74,7 @@ def probability(args):
 
 
 def main():
-    # create parser object
+    # create parser object 
     parser = argparse.ArgumentParser(description=" strategic universe warrior!")
 
     parser.add_argument("-p", "--probability", type=str, nargs=2,
