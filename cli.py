@@ -53,15 +53,15 @@ def display(args):
 
 
 def probability(args):
-    # file to be copied
+    #millennium_falcon
     file1 = args.probability[0]
-    # file to copy upon
+    #empire
     file2 = args.probability[1]
 
-    # validate the file to be copied
+    # validate millennium_falcon file
     validate_file(file1)
 
-    # validate the type of file 2
+    # validate the type of empire file 
     if not valid_file_type(file2):
         print(INVALID_FILETYPE_MSG % file2)
         exit()
