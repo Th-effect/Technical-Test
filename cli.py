@@ -31,15 +31,15 @@ def valid_path(path):
 
 
 def display(args):
-    # file to be copied
-    file1 = args.display[0]
-    # file to copy upon
-    file2 = args.display[1]
+  
+   #millennium_falcon
+    file1 = args.probability[0]
+    #empire
+    file2 = args.probability[1]
 
-    # validate the file to be copied
+    # validate millennium_falcon file
     validate_file(file1)
-
-    # validate the type of file 2
+   
     if not valid_file_type(file2):
         logging.warning(INVALID_FILETYPE_MSG % file2)
         exit()
