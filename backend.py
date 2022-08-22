@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import math
 import json
 import os
+from pathlib import Path
 
 
 def routes_db_connector(path, routes_db=None):
@@ -25,6 +26,7 @@ def routes_db_connector(path, routes_db=None):
 
 
 class War:
+    path = ""
     empire = dict()
     millennium_falcon = dict()
     bounty_hunters = dict()
@@ -35,7 +37,7 @@ class War:
     MAX_STOP_DAYS = 2
 
     def __init__(self, millennium_falcon_path, empire_path):
-
+        self.path = Path(millennium_falcon_path).parent
         with open(empire_path) as empire_json_file:
             self.empire = json.load(empire_json_file)
             empire_json_file.close()
