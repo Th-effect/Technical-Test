@@ -24,8 +24,8 @@ def routes_db_connector(path, routes_db=None):
         if sqliteConnection:
             sqliteConnection.close()
 
-
-class War:
+#⚠️💊🎢🗽🗼🏗🐘🏭♟️ '`https://twitter.com/C_RMWH_F/status/1719474495319105965?t=-93ATHp9jKk2uJAbm_UGhQ&s=19`'
+class War: 
     path = ""
     empire = dict()
     millennium_falcon = dict()
